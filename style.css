@@ -442,9 +442,135 @@ html{
     padding: 1rem .1rem;
 }
 
-
-
 /* review section start */
+
+/* contact us section start */
+.contact .row{
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contact .row .map iframe{
+    height: 70vh;
+    width: 50vw;
+    padding: 1rem;
+}
+
+.contact .row .contact-form-container{
+    width: 50%;
+}
+
+.contact .row .contact-form-container h3{
+    font-size: 4rem;
+    padding-top: 4rem;
+    text-align: center;
+    color: var(--blue);
+}
+
+.contact .row .contact-form-container .inputbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .row .contact-form-container .inputbox input{
+    width: 49%;
+}
+
+.contact .row .contact-form-container form input, textarea{
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    outline: none;
+    border-bottom: .2rem solid var(--blue);
+    height: 4rem;
+    background: var(--wight);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+
+.contact .row .contact-form-container form textarea{
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    resize: none;
+}
+
+.contact .row .contact-form-container form input[type="submit"]{
+    color: var(--wight);
+    background: var(--blue);
+    width: 20rem;
+}
+
+.contact .row .contact-form-container form input[type="submit"]:hover{
+    color: var(--blue);
+    background: var(--wight);
+}
+
+/* contact us section start */
+
+/* footer section start */
+
+.footer{
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(images/foot.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.footer h1{
+    color: var(--wight);
+    font-size: 4.5rem;
+    text-shadow: 0 ,3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.footer h1 span{
+    color: var(--blue);
+}
+
+.footer p{
+    font-size: 2rem;
+    color: var(--wight);
+    padding: 1rem 10rem;
+}
+
+.footer .icons a{
+    font-size: 2rem;
+    margin: 0 .5rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--wight);
+    border: .2rem solid var(--wight);
+    background: var(--red);
+    transition: .3s linear;
+}
+
+.footer .icons a:hover{
+    background: var(--wight);
+    color: var(--red);
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: solid .2rem var(--wight);
+    font-size: 2.5rem;
+    color: var(--wight);
+}
+
+
+.footer .credit span{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+/* footer section end */
 
 
 
@@ -549,6 +675,23 @@ html{
         width: 100%;
     }
 
+    /* contact section */
+    .contact .row{
+        flex-flow: column;
+    }
+
+    .contact .row .map iframe{
+        width: 100vw;
+    }
+
+    .contact .row .contact-form-container{
+        width: 90%;
+    }
+
+    /* footer section */
+    .footer p{
+        padding: 1rem;
+    }
 
 
 
